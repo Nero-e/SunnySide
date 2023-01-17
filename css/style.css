@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: [header] 8% [body] auto [footer] 20%;
+    width: 100vw;
+    height: 100vh;
+
+}
+.box {
+}
+.header {
+    display: flex;
+    align-items: center;
+    background-color: #3ebeff;
+    justify-content: space-between;
+    padding: 0 1em;
+}
+.title-1 {
+    color: #fff;
+    font-family: 'Secular One', sans-serif;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    color: #fff;
+}
+.menu-item {
+    padding:  0 1em;
+}
+.title h1 {
+    padding: 1em 0 1em 0;
+    margin: 0;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-family: 'Secular One', sans-serif;
+    font-size: 4em;
+}
+.title {
+    display: flex;
+    justify-content: center;
+}
+.body-section image {
+    position: relative;
+}
+.image {
+    width: 100vw;
+    height: auto;
+}
+.grid-test {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "item-a item-b"
+    "item-c item-d"
+    "item-e item-f";
+}
+.item {
+    grid-area: item;
+}
+.item-a {
+    grid-area: item-a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 10em;
+}
+.image-item {
+    width: 50vw;
+    height: auto;
+}
+.item-b {
+    grid-area: item-b;
+}
+.item-c {
+    grid-area: item-c;
+}
+.item-d {
+    grid-area: item-d;
+}
+.item-e {
+    grid-area: item-e;
+}
+.item-f {
+    grid-area: item-f;
+}
+.footer {
+    background-color: #91d3c5;  
+}
